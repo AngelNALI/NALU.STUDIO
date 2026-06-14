@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nalu Studio — Desarrollo Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav id="navbar">
+  <a class="nav-logo" href="#inicio">NALU<span class="dot">.</span>STUDIO</a>
+  <button class="nav-burger" id="burger" aria-label="Menú"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#services">Servicios</a></li>
+    <li><a href="#process">Proceso</a></li>
+    <li><a href="#hosting">Hosting</a></li>
+    <li><a href="#contact" class="nav-cta">Hablemos</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="inicio">
+  <canvas id="stageCanvas"></canvas>
+  <div class="hero-fog"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-status"><span class="live-dot"></span>Disponible · Freelance</div>
+      <h1 class="hero-title">
+        <span class="ht-w">TU IDEA,</span>
+        <span class="ht-b">HECHA</span>
+        <span class="ht-g">PÁGINA WEB.</span>
+      </h1>
+    </div>
+    <div class="hero-right">
+      <p class="hero-desc">Sitios construidos desde cero con identidad visual propia. Sin plantillas, sin atajos.</p>
+      <div class="hero-btns">
+        <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+        <a href="#contact" class="btn-ghost">Contactar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="light-section">
+  <div class="about-inner">
+    <div class="about-left">
+      <p class="label">Quién soy</p>
+      <h2 class="xl-title">TODO PARTE<br>DE UNA<br><span class="acc">IDEA.</span></h2>
+    </div>
+    <div class="about-body-col">
+      <p class="about-body">Soy desarrollador web freelance. Antes de escribir una línea de código defino la identidad del proyecto — qué quiere decir, a quién le habla, qué emoción debe provocar.</p>
+      <div class="about-pull">
+        <p><strong>El diseño y el código vienen después de la idea.</strong> Eso es lo que separa un sitio con identidad de uno genérico.</p>
+      </div>
+      <a href="#proyectos" class="btn-primary" style="align-self:flex-start;margin-top:1rem">Ver mi trabajo</a>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos">
+  <div class="proj-header">
+    <div>
+      <p class="label">Proyectos</p>
+      <h2 class="xl-title">LO QUE HE<br><span class="fade">CONSTRUIDO.</span></h2>
+    </div>
+    <p class="section-sub">Cada sitio nace de un concepto visual primero. El código viene después.</p>
+  </div>
+
+  <div class="proj-grid">
+
+    <div class="proj-card rv">
+      <div class="proj-card-img institutional">
+        <img src="imagenes/cbta174.png" alt="plataforma institucional">
+        <div class="proj-card-overlay">
+          <a href="http://2.24.117.241" target="_blank" class="proj-visit">Ver sitio ↗</a>
+        </div>
+      </div>
+      <div class="proj-card-body">
+        <div class="proj-tags">
+          <span class="p-cat">Plataforma institucional</span>
+          <span class="p-idea">Concepto: arquitectura y flujo de datos</span>
+        </div>
+        <h3 class="proj-name">Sistema de Gestión Escolar</h3>
+        <p class="proj-desc">El diseño refleja la estructura del dato — jerarquías claras, tablas limpias, flujos directos. Incluye módulo de panel para directivos con estadísticas, gestión de alumnos y generación automática de expedientes.</p>
+        <div class="proj-tech">
+          <span>Node.js</span><span>PostgreSQL</span><span>HTML/CSS</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-card rv">
+      <div class="proj-card-img plants">
+        <img src="imagenes/GREENstore.png" alt="Tienda de Plantas">
+        <div class="proj-card-overlay">
+          <a href="https://angelnali.github.io/GREENstore/" target="_blank" class="proj-visit">Ver sitio ↗</a>
+        </div>
+      </div>
+      <div class="proj-card-body">
+        <div class="proj-tags">
+          <span class="p-cat">Catálogo / E-commerce</span>
+          <span class="p-idea">Concepto: naturaleza, calma y textura orgánica</span>
+        </div>
+        <h3 class="proj-name">Tienda de Plantas</h3>
+        <p class="proj-desc">El sitio respira como el producto — espacios amplios, tonos tierra, movimiento lento. Catálogo visual con ficha por especie e integración directa con WhatsApp para pedidos.</p>
+        <div class="proj-tech">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-card rv">
+      <div class="proj-card-img anime">
+        <img src="imagenes/angiMANGA.png" alt="AngiMANGA">
+        <div class="proj-card-overlay">
+          <a href="https://angelnali.github.io/ANGImanga/#mangas" target="_blank" class="proj-visit">Ver sitio ↗</a>
+        </div>
+      </div>
+      <div class="proj-card-body">
+        <div class="proj-tags">
+          <span class="p-cat">Tienda online / Cultura otaku</span>
+          <span class="p-idea">Concepto: editorial japonés y energía de fandom</span>
+        </div>
+        <h3 class="proj-name">AngiMANGA</h3>
+        <p class="proj-desc">Tipografía densa, contrastes duros y acentos morados — inspirado en portadas de manga. Catálogo de mangas y cómics con calificación y precio, carrusel de destacados, sección de recomendaciones y noticias de anime.</p>
+        <div class="proj-tech">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-card rv">
+      <div class="proj-card-img community">
+        <img src="imagenes/PEC.png" alt="PEC">
+        <div class="proj-card-overlay">
+          <a href="https://angelnali.github.io/Escuela_comunidad_CBTA174/" target="_blank" class="proj-visit">Ver sitio ↗</a>
+        </div>
+      </div>
+      <div class="proj-card-body">
+        <div class="proj-tags">
+          <span class="p-cat">Proyecto académico / Investigación social</span>
+          <span class="p-idea">Concepto: trabajo de campo, comunidad y propósito</span>
+        </div>
+        <h3 class="proj-name">Comunidad Escolar</h3>
+        <p class="proj-desc">Sitio que reúne el trabajo de investigación de un grupo de estudiantes — análisis FODA de comunidades cercanas, problemáticas detectadas y propuestas de solución, con galería de fotos de jornadas de limpieza y actividades comunitarias.</p>
+        <div class="proj-tech">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="services">
+  <div class="svc-left">
+    <p class="label">Servicios</p>
+    <h2 class="xl-title">¿QUÉ PUEDO<br>HACER<br><span class="acc">POR TI?</span></h2>
+    <p class="section-sub" style="margin-top:1.5rem">Sin Wix. Sin plantillas. Tu sitio desde cero con identidad propia.</p>
+  </div>
+  <div class="svc-right">
+    <div class="svc-block rv">
+      <div class="svc-content">
+        <h3>Landing Page</h3>
+        <ul>
+          <li>Diseño único, no de plantilla</li>
+          <li>Responsive (móvil y escritorio)</li>
+          <li>Botón directo a WhatsApp</li>
+          <li>Formulario de contacto</li>
+          <li>Carga rápida y optimizada</li>
+        </ul>
+      </div>
+    </div>
+    <div class="svc-block hot rv">
+      <div class="svc-content">
+        <h3>Sitio Multipágina</h3>
+        <ul>
+          <li>Varias secciones y páginas</li>
+          <li>Galerías de fotos o productos</li>
+          <li>Menú de navegación completo</li>
+          <li>Información detallada del negocio</li>
+          <li>Integración con redes sociales</li>
+        </ul>
+      </div>
+    </div>
+    <div class="svc-block rv">
+      <div class="svc-content">
+        <h3>Mantenimiento</h3>
+        <ul>
+          <li>Actualizaciones de contenido</li>
+          <li>Cambios menores de diseño</li>
+          <li>Soporte ante problemas</li>
+          <li>Respaldo periódico del sitio</li>
+          <li>Monitoreo de disponibilidad</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="svc-cta">
+    <a href="#contact" class="btn-primary">Contáctame para más información</a>
+  </div>
+</section>
+
+<section id="process">
+  <div class="proc-head">
+    <p class="label">¿Cómo funciona?</p>
+    <h2 class="xl-title">DE TU IDEA<br>A <span class="acc">INTERNET.</span></h2>
+  </div>
+  <div class="proc-track">
+    <div class="proc-step rv"><div class="proc-dot">1</div><h3>Me contactas</h3><p>Cuéntame tu negocio. Una conversación es suficiente para arrancar.</p></div>
+    <div class="proc-step rv"><div class="proc-dot">2</div><h3>Definimos el concepto</h3><p>Hablamos de identidad — qué quiere transmitir el sitio y a quién le habla.</p></div>
+    <div class="proc-step rv"><div class="proc-dot">3</div><h3>Desarrollo tu página</h3><p>Código limpio desde cero. Rápido y responsivo.</p></div>
+    <div class="proc-step rv"><div class="proc-dot">4</div><h3>Dominio y hosting</h3><p>Te ayudo a contratar todo a tu nombre. El sitio siempre es tuyo.</p></div>
+    <div class="proc-step rv"><div class="proc-dot">5</div><h3>Publicamos</h3><p>Tu sitio sale al aire. Tus clientes ya pueden encontrarte.</p></div>
+    <div class="proc-step rv"><div class="proc-dot">6</div><h3>Mantenimiento <span class="pill">Opcional</span></h3><p>Soporte mensual para mantener el sitio actualizado y seguro.</p></div>
+  </div>
+</section>
+
+<section id="hosting" class="light-section">
+  <div class="host-intro">
+    <div>
+      <p class="label">Dominio y Alojamiento</p>
+      <h2 class="xl-title">LO QUE NADIE<br>TE <span class="acc">EXPLICA.</span></h2>
+    </div>
+    <div class="host-concepts">
+      <div class="h-concept">
+        <span class="h-em">🌐</span>
+        <div class="h-text">
+          <h4>Dominio</h4>
+          <p>Tu dirección en internet — como <code>tunegocio.com</code>. Se contrata al año, a tu nombre, para siempre.</p>
+        </div>
+      </div>
+      <div class="h-concept">
+        <span class="h-em">🖥️</span>
+        <div class="h-text">
+          <h4>Hosting</h4>
+          <p>El servidor donde "vive" tu página, disponible 24 horas para cualquiera en el mundo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="host-warn">⚠️ El dominio y el hosting <strong>no están incluidos</strong> en el desarrollo. Se contratan por separado, siempre a tu nombre.</div>
+  <div class="host-cards">
+    <div class="h-card rv">
+      <span class="h-tier">Opción gratuita</span>
+      <div class="h-name">GitHub Pages</div>
+      <p class="h-desc">Hosting gratuito para sitios estáticos. Solo pagas el dominio. Ideal para landing pages y portafolios.</p>
+      <ul class="h-list">
+        <li>✅ Hosting 100% gratuito</li><li>✅ HTTPS incluido</li>
+        <li>✅ Conectas tu dominio propio</li><li>⚠️ Solo sitios sin base de datos</li>
+      </ul>
+    </div>
+    <div class="h-card highlight rv">
+      <span class="h-tier">Opción económica</span>
+      <div class="h-name">Hostinger / Namecheap</div>
+      <p class="h-desc">Hosting de calidad a precio accesible. Funciona para cualquier tipo de sitio, con o sin backend.</p>
+      <ul class="h-list">
+        <li>✅ Panel de control sencillo</li><li>✅ Dominio incluido el primer año</li>
+        <li>✅ HTTPS gratuito</li><li>✅ Soporte técnico disponible</li>
+      </ul>
+    </div>
+    <div class="h-card rv">
+      <span class="h-tier">Opción profesional</span>
+      <div class="h-name">VPS (Servidor Virtual)</div>
+      <p class="h-desc">Control total y máximo rendimiento. Para proyectos que escalan o con funcionalidades avanzadas.</p>
+      <ul class="h-list">
+        <li>✅ Recursos dedicados</li><li>✅ Control y velocidad total</li>
+        <li>✅ Ideal para proyectos en crecimiento</li><li>⚠️ Requiere configuración técnica</li>
+      </ul>
+    </div>
+  </div>
+  <div class="host-tip">💡 <strong>¿No sabes cuál elegir?</strong> Cuando iniciemos tu proyecto te asesoro gratis para encontrar la mejor opción.</div>
+</section>
+
+<section id="contact">
+  <div class="contact-inner">
+    <div class="contact-grid">
+      <div class="contact-left">
+        <p class="label">Contacto</p>
+        <h2 class="xl-title">¿LISTO PARA<br><span class="acc">EMPEZAR?</span></h2>
+        <p class="contact-desc">Cuéntame tu idea. No necesitas tenerlo todo claro — con una descripción general ya podemos arrancar la conversación.</p>
+        <div class="clinks">
+          <a class="clink" href="https://wa.me/524621496898" target="_blank">
+            <div class="clink-l">
+              <span style="display:flex"><svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span>
+              <div><div class="clink-name">WhatsApp</div><div class="clink-detail">Respondo rápido</div></div>
+            </div>
+            <span class="clink-arr">↗</span>
+          </a>
+          <a class="clink" href="mailto:angelaldacoprsl@gmail.com">
+            <div class="clink-l">
+              <span style="display:flex"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3AABF0" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+              <div><div class="clink-name">Correo electrónico</div><div class="clink-detail">angelaldacoprsl@gmail.com</div></div>
+            </div>
+            <span class="clink-arr">↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <div class="avail-card">
+          <div class="hero-status" style="margin-bottom:1.6rem"><span class="live-dot"></span>Disponible ahora</div>
+          <div class="avail-stat">
+            <span class="avail-n">&lt; 24h</span>
+            <span class="avail-l">Tiempo de respuesta</span>
+          </div>
+          <canvas id="miniStage"></canvas>
+          <div class="avail-stat">
+            <span class="avail-n">Lunes–Sábado</span>
+            <span class="avail-l">Disponibilidad de atención</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-logo">NALU<span class="dot">.</span>STUDIO</div>
+  <p>© 2026 Nalu Studio — Desarrollo Web · México</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
