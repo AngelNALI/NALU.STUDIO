@@ -242,7 +242,9 @@ body {
 .svc-block { background: var(--bg-mid); padding: 2.8rem 2.2rem; position: relative; transition: background .3s; }
 .svc-block:hover { background: var(--surface); }
 .svc-block.hot { background: var(--surface); box-shadow: inset 3px 0 0 var(--blue); }
-.svc-content h3 { font-family: var(--heading); font-weight: 700; font-size: 1rem; margin-bottom: .85rem; }
+.svc-title-row { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.4rem; }
+.svc-content h3 { font-family: var(--heading); font-weight: 700; font-size: 1rem; margin-bottom: 0; }
+.svc-price { font-size: .78rem; font-weight: 700; color: var(--blue); white-space: nowrap; }
 .svc-content ul { list-style: none; display: flex; flex-direction: column; gap: .48rem; }
 .svc-content li { font-size: .82rem; color: var(--mid); display: flex; align-items: baseline; gap: .6rem; }
 .svc-content li::before { content: ''; flex-shrink: 0; width: 4px; height: 4px; border-radius: 50%; background: var(--blue); margin-top: .46rem; }
@@ -328,6 +330,19 @@ footer { border-top: 1px solid var(--border); padding: 2rem 5%; display: flex; j
 .foot-logo .dot { color: var(--blue); }
 footer p { font-size: .74rem; color: var(--mid); }
 
+.wapp-float {
+  position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 250;
+  width: 56px; height: 56px; border-radius: 50%;
+  background: #25D366; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 18px rgba(0,0,0,.35);
+  transition: transform .2s, box-shadow .2s;
+}
+.wapp-float:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 24px rgba(0,0,0,.45);
+}
+
 @media (min-width: 1600px) {
   .hero-title { font-size: clamp(3.8rem, 7vw, 8.5rem); }
   .xl-title { font-size: clamp(3rem, 6vw, 6.5rem); }
@@ -357,7 +372,9 @@ footer p { font-size: .74rem; color: var(--mid); }
 
 @media (max-width: 720px) {
   .nav-links {
-    display: none; flex-direction: column; position: fixed; inset: 0;
+    display: none; flex-direction: column;
+    position: fixed; top: 0; left: 0;
+    width: 100vw; height: 100vh;
     background: rgba(6,8,14,.97); align-items: center; justify-content: center;
     gap: 2.5rem; z-index: 299;
   }
@@ -393,6 +410,7 @@ footer p { font-size: .74rem; color: var(--mid); }
 }
 
 @media (max-width: 420px) {
+  .wapp-float { width: 50px; height: 50px; bottom: 1rem; right: 1rem; }
   .hero-title { font-size: clamp(2.4rem, 15vw, 3.6rem); }
   .hero-status { letter-spacing: .15em; }
   .xl-title { font-size: clamp(2.1rem, 14vw, 3.2rem); }
