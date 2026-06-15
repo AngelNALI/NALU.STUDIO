@@ -426,4 +426,4 @@ footer p { font-size: .74rem; color: var(--mid); }
   .avail-n { font-size: 2.2rem; }
 }
 
-@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }efers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
